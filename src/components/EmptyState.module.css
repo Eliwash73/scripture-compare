@@ -1,0 +1,52 @@
+.wrap {
+  text-align: center;
+  padding: 64px 24px;
+}
+
+.icon {
+  font-size: 48px;
+  color: var(--text-tertiary);
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.sub {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.examples {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.pill {
+  padding: 8px 18px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-light);
+  border-radius: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pill:hover {
+  background: rgba(6, 182, 212, 0.1);
+  border-color: var(--accent-primary);
+  color: var(--accent-light);
+}

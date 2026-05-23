@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -7,30 +7,38 @@
 }
 
 :root {
-  /* Dark theme backgrounds */
-  --bg-primary: #0f1117;
-  --bg-secondary: #1a202c;
-  --bg-tertiary: #2d3748;
+  /* Dark theme backgrounds - sleek black and charcoal */
+  --bg-primary: #0a0e27;
+  --bg-secondary: #161b2e;
+  --bg-tertiary: #1f2633;
+  --bg-quaternary: #292f3f;
   
   /* Text colors */
-  --text-primary: #e2e8f0;
+  --text-primary: #f0f4f8;
   --text-secondary: #cbd5e0;
-  --text-tertiary: #a0aec0;
+  --text-tertiary: #8b95a5;
   
-  /* Accent colors - modern cyan/teal */
-  --accent-primary: #06b6d4;
-  --accent-secondary: #0891b2;
-  --accent-light: #06d6ff;
+  /* Accent colors - vibrant with pops of color */
+  --accent-primary: #00d9ff;
+  --accent-secondary: #0099cc;
+  --accent-light: #33e9ff;
   --accent-dark: #0f766e;
+  --accent-pop: #ff006e;
+  --accent-warm: #ffb703;
   
   /* Additional colors */
-  --border: #2d3748;
-  --border-light: #4a5568;
+  --border: #252d3d;
+  --border-light: #3a4251;
   --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
-  --error-bg: rgba(239, 68, 68, 0.1);
-  --error-border: #7f1d1d;
+  --warning: #ffb703;
+  --error: #ff006e;
+  --error-bg: rgba(255, 0, 110, 0.08);
+  --error-border: #5a0033;
+  --error-label: #ff006e;
+  
+  /* Skeleton loading colors */
+  --parchment3: #252d3d;
+  --parchment2: #3a4251;
 }
 
 html {
@@ -42,7 +50,7 @@ html {
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
 }
 

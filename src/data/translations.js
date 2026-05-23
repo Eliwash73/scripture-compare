@@ -1,22 +1,28 @@
-// Translations available via bible-api.com (public domain, no API key needed)
-// To add NIV, ESV, NLT, MSG etc — switch to api.bible (see README)
+// Translations available via Bolls Bible API (https://bolls.life/)
+// Free, no API key needed. Includes modern and classic translations.
 
 export const TRANSLATIONS = [
-  { id: 'kjv',          abbr: 'KJV',   name: 'King James Version' },
-  { id: 'web',          abbr: 'WEB',   name: 'World English Bible' },
-  { id: 'bbe',          abbr: 'BBE',   name: 'Bible in Basic English' },
-  { id: 'asv',          abbr: 'ASV',   name: 'American Standard Version' },
-  { id: 'darby',        abbr: 'DARBY', name: 'Darby Bible' },
-  { id: 'ylt',          abbr: 'YLT',   name: "Young's Literal Translation" },
-  { id: 'douayrheims',  abbr: 'DRB',   name: 'Douay-Rheims Bible' },
-  { id: 'oeb-us',       abbr: 'OEB',   name: 'Open English Bible (US)' },
-  { id: 'webbe',        abbr: 'WBBE',  name: 'World English Bible (British)' },
-  { id: 'clementine',   abbr: 'VCLM',  name: 'Clementine Vulgate (Latin)' },
-  { id: 'almeida',      abbr: 'ALM',   name: 'Almeida (Português)' },
-  { id: 'rccv',         abbr: 'RCCV',  name: 'Romanian Cornilescu' },
+  // Modern English Translations
+  { id: 'ESV',          abbr: 'ESV',   name: 'English Standard Version' },
+  { id: 'NLT',          abbr: 'NLT',   name: 'New Living Translation' },
+  { id: 'NIV',          abbr: 'NIV',   name: 'New International Version' },
+  { id: 'MSG',          abbr: 'MSG',   name: 'The Message' },
+  { id: 'NKJV',         abbr: 'NKJV',  name: 'New King James Version' },
+  
+  // Classic Translations
+  { id: 'KJV',          abbr: 'KJV',   name: 'King James Version' },
+  { id: 'NASB',         abbr: 'NASB',  name: 'New American Standard Bible' },
+  { id: 'NRSV',         abbr: 'NRSV',  name: 'New Revised Standard Version' },
+  { id: 'ASV',          abbr: 'ASV',   name: 'American Standard Version' },
+  { id: 'YLT',          abbr: 'YLT',   name: "Young's Literal Translation" },
+  
+  // Other Translations
+  { id: 'WEB',          abbr: 'WEB',   name: 'World English Bible' },
+  { id: 'AKJV',         abbr: 'AKJV',  name: 'Authorized King James Version' },
+  { id: 'DARBY',        abbr: 'DARBY', name: 'Darby Bible' },
 ]
 
-export const DEFAULT_SELECTED = ['kjv', 'esv', 'bbe', 'asv', 'darby']
+export const DEFAULT_SELECTED = ['NIV', 'NKJV', 'ESV', 'NLT', 'MSG']
 
 export const EXAMPLE_VERSES = [
   'John 3:16',
@@ -24,6 +30,6 @@ export const EXAMPLE_VERSES = [
   'Romans 8:28',
   'Proverbs 3:5-6',
   'Genesis 1:1',
-  'Isaiah 40:31',
+  'Isaiah 43:18',
   'Philippians 4:13',
 ]

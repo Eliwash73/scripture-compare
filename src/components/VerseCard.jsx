@@ -73,10 +73,11 @@ export default function VerseCard({ trans, reference }) {
             ? data.verses.map(v => (
                 <span key={v.verse}>
                   <sup className={styles.verseNum}>{v.verse}</sup>
-                  {v.text.trim()}{' '}
+                  <span dangerouslySetInnerHTML={{ __html: v.text.trim() }} />
+                  {' '}
                 </span>
               ))
-            : data.text.trim()
+            : <span dangerouslySetInnerHTML={{ __html: data.text.trim() }} />
           }
         </p>
       </div>

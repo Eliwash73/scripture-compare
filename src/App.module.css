@@ -113,3 +113,35 @@
   .grid { grid-template-columns: 1fr; }
   .passageRef { font-size: 1.2rem; }
 }
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-secondary);
+}
+
+.githubLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  color: var(--text-secondary);
+  font-size: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--bg-tertiary);
+  border: 1.5px solid var(--border);
+}
+
+.githubLink:hover {
+  color: var(--accent-light);
+  border-color: var(--accent-primary);
+  background: rgba(0, 217, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 217, 255, 0.15);
+}

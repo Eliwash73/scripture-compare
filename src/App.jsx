@@ -113,6 +113,19 @@ export default function App() {
           <EmptyState onExample={handleExample} />
         )}
       </main>
+
+      {/* Footer */}
+      <footer className={styles.footer}>
+        <a
+          href="https://github.com/Eliwash73/scripture-compare"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.githubLink}
+          aria-label="GitHub repository"
+        >
+          <i className="ti ti-brand-github" aria-hidden="true" />
+        </a>
+      </footer>
     </div>
   )
 }

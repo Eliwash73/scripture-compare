@@ -54,10 +54,23 @@ export default function App() {
     })
   }
 
+  const handleHeaderClick = () => {
+    setInputVal('')
+    setCurrentRef(null)
+    window.history.replaceState({}, '', window.location.pathname)
+  }
+
+  const handleHeaderKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      handleHeaderClick()
+    }
+  }
+
   return (
     <div className={styles.app}>
       {/* Header */}
-      <header className={styles.header}>
+      <header className={styles.header} onClick={handleHeaderClick} onKeyDown={handleHeaderKeyDown} role="button" tabIndex="0" aria-label="Clear search">
         <i className="ti ti-book-2" aria-hidden="true" className={styles.headerIcon} />
         <div>
           <h1 className={styles.headerTitle}>Scripture Compare</h1>

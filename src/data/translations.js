@@ -22,14 +22,14 @@ export const TRANSLATIONS = [
   { id: 'DARBY',        abbr: 'DARBY', name: 'Darby Bible' },
 ]
 
-export const DEFAULT_SELECTED = ['NIV', 'NKJV', 'ESV', 'NLT', 'MSG']
+export const DEFAULT_SELECTED = ['NIV', 'KJV', 'ESV', 'NLT', 'NASB']
 
 export const EXAMPLE_VERSES = [
   'John 3:16',
   'Psalm 23:1-6',
-  'Romans 8:28',
+  'Matthew 22:37-40',
   'Proverbs 3:5-6',
   'Genesis 1:1',
   'Isaiah 43:18',
-  'Philippians 4:13',
+  'Psalms 73:26',
 ]

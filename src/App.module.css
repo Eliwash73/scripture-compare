@@ -14,11 +14,24 @@
   gap: 14px;
   border-bottom: 1px solid var(--border);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header:hover {
+  background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-quaternary) 100%);
+  border-bottom-color: var(--accent-primary);
+  box-shadow: 0 12px 40px rgba(0, 217, 255, 0.15);
 }
 
 .headerIcon {
   font-size: 24px;
   color: var(--accent-light);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header:hover .headerIcon {
+  transform: scale(1.1);
 }
 
 .headerTitle {
@@ -27,6 +40,11 @@
   font-weight: 700;
   color: var(--text-primary);
   letter-spacing: 0.02em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header:hover .headerTitle {
+  color: var(--accent-light);
 }
 
 .headerSub {
